@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+
+
+/* 1. Reset básico e ajustes de scroll */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em; 
+    background-color: #f4f7f6; /* Fundo suave */
+   
+    justify-content: center; /* Centraliza verticalmente */
+    min-height: 100vh;       /* Ocupa a altura toda da tela */
+    padding: 20px 10px;      /* Espaçamento nas laterais */
+}
+
+/* 2. Caixa de ferramentas responsiva */
+.box {
+    border-radius: 50px; /* Estilo "pílula" */
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap; /* Faz os botões pularem de linha se não couberem */
+    justify-content: center;
+}
+
+/* 3. Canvas Inteligente */
+canvas {
+    border: 2px solid #333;
+    background: white;
+    cursor: crosshair;
+    border-radius: 8px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1); /* Sombra profunda */
+    /* Regras de Responsividade */
+    max-width: 100%; /* Não deixa o canvas ser maior que a largura da tela */
+    height: auto;    /* Mantém a proporção correta */
+    
+    /* Melhora a precisão do toque no mobile */
+    touch-action: none; 
+}
+
+/* 4. Estilo dos botões e inputs */
+button {
+    padding: 10px 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: white;
+    transition: background 0.3s;
+}
+
+button:active {
+    background-color: #ddd;
+}
+
+#save {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+#btn {
+    background-color: #f00707;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+input[type="color"] {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: none;
+}
+
+/* Ajuste específico para telas muito pequenas (celulares) */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    .box {
+        gap: 8px;
+    }
+}
+
+h2 {
+    font-size: 1.9rem; /* Aumenta o tamanho */
+    font-weight: 800;  /* Deixa bem negrito */
+    background: linear-gradient(45deg, #00b894, #0984e3); /* Gradiente de verde para azul */
+    -webkit-background-clip: text; /* Corta o fundo no formato do texto */
+    -webkit-text-fill-color: transparent; /* Deixa o preenchimento invisível para mostrar o gradiente */
+    margin-bottom: 25px;
+    letter-spacing: -1.5px; 
+    text-align: center;
+}
