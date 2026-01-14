@@ -1,4 +1,4 @@
-🎨 DESENHE AQUI
+## 🎨 DESENHE AQUI
 
 🔗 https://nkandre.github.io/DesenhoLivre/
 
@@ -8,7 +8,7 @@ O projeto permite que qualquer usuário desenhe livremente de forma fácil e div
 
 Este projeto foi criado a partir de um pedido real feito pela minha irmã de 8 anos. Ela me deu uma missão e eu aceitei o desafio! Além disso, o projeto serviu como prática de desenvolvimento front-end e interação com o elemento HTML Canvas.
 
-🚀 FUNCIONALIDADES
+## 🚀 FUNCIONALIDADES
 
 Desenho livre em canvas
 
@@ -22,7 +22,7 @@ Salvar o desenho
 
 Interface responsiva para diferentes tamanhos de tela
 
-🎯 OBJETIVO DO PROJETO
+## 🎯 OBJETIVO DO PROJETO
 
 Criar uma interface simples, acessível e responsiva
 
@@ -34,8 +34,9 @@ Manipular o elemento HTML Canvas
 
 Pensar na experiência do usuário final
 
-🛠️ TECNOLOGIAS
+## 🛠️ TECNOLOGIAS
 <div style="display: flex; gap: 10px;"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="HTML5" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="CSS3" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="JavaScript" /> </div>
-👨‍💻 AUTOR
+
+## 👨‍💻 AUTOR
 
 Projeto desenvolvido por André Santos
