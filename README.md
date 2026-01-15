@@ -8,6 +8,10 @@ O projeto permite que qualquer usuário desenhe livremente de forma fácil e div
 
 Este projeto foi criado a partir de um pedido real feito pela minha irmã de 8 anos. Ela me deu uma missão e eu aceitei o desafio! Além disso, o projeto serviu como prática de desenvolvimento front-end e interação com o elemento HTML Canvas.
 
+## OBSERVAÇÃO 🧏🏽‍♂️
+
+-comentei algumas parte do código, para ficar claro as funcionalidades de cada linha, principalmente css e já.
+
 ## 🚀 FUNCIONALIDADES
 
 Desenho livre em canvas
