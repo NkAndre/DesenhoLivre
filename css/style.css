@@ -8,6 +8,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --bg-body: #f4f7f6;
+    --bg-box: #ffffff;
+    --text-color: #333;
+    --canvas-border: #ddd;
+    --button-shadow: rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode {
+    --bg-body: #090035;
+    --bg-box: #1e1e1e;
+    --text-color: #f4f7f6;
+    --canvas-border: #333;
+    --button-shadow: rgba(0, 0, 0, 0.5);
+}
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -15,7 +30,9 @@ body {
     align-items: center;
     flex-direction: column;
     padding: 1em; 
-    background-color: #f4f7f6; /* Fundo suave */
+    background-color: var(--bg-body);
+    color: var(--text-color);
+    transition: background 0.3s, color 0.3s;
    
     justify-content: center; /* Centraliza verticalmente */
     min-height: 100vh;       /* Ocupa a altura toda da tela */
@@ -24,7 +41,8 @@ body {
 
 /* 2. Caixa de ferramentas responsiva */
 .box {
-    border-radius: 50px; /* Estilo "pílula" */
+    
+    border-radius: 100px; /* Estilo "pílula" */
     margin: 20px 0;
     display: flex;
     gap: 10px;
@@ -35,7 +53,7 @@ body {
 
 /* 3. Canvas Inteligente */
 canvas {
-    border: 2px solid #333;
+    border: 1px solid #e0e0e0;
     background: white;
     cursor: crosshair;
     border-radius: 8px;
@@ -77,12 +95,31 @@ button:active {
 }
 
 input[type="color"] {
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
+ -webkit-appearance: none;
     border: none;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
     background: none;
 }
+input[type="range"] {
+    cursor: pointer;
+    accent-color: #0984e3; /* Muda a cor da "bolinha" do slider */
+}
+
+button {
+    transition: transform 0.2s, background 0.3s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px); /* Eleva levemente o botão */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    filter: brightness(1.1); /* Dá um brilho extra */
+}
+
+button:active {
+    transform: translateY(0); /* Volta ao normal ao clicar */
+}       
 
 /* Ajuste específico para telas muito pequenas (celulares) */
 @media (max-width: 480px) {

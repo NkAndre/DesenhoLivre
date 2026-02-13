@@ -80,3 +80,22 @@ saveBtn.addEventListener('click', () => {
     link.href = canvas.toDataURL("image/png");
     link.click();
 });
+
+    const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
+
+// Verifica se o usuário já tinha uma preferência salva
+if (localStorage.getItem('theme') === 'dark') {
+    body.classList.add('dark-mode');
+    themeToggle.innerText = '☀️'; // Ícone de sol para voltar ao light
+}
+
+themeToggle.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    
+    const isDark = body.classList.contains('dark-mode');
+    themeToggle.innerText = isDark ? '☀️' : '🌙';
+    
+    // Salva a escolha do usuário
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+});
